@@ -21,7 +21,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         match.setPlayerOfMatch(matchInput.getPlayer_of_match());
         match.setVenue(matchInput.getVenue());
 
-        //Set team1 and team2 depedning on the innings order
+        //Set team1 and team2 depending on the innings order
         String firstInningsTeam, secondInningsTeam;
         if("bat".equals(matchInput.getToss_decision())){
             firstInningsTeam = matchInput.getToss_winner();

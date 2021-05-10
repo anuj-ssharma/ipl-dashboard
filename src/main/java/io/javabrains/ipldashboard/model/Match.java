@@ -1,8 +1,13 @@
 package io.javabrains.ipldashboard.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
+@Entity
 public class Match {
+
+    @Id
     public long getId() {
         return id;
     }
