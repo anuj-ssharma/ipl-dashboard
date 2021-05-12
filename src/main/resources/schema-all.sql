@@ -1,6 +1,6 @@
-DROP TABLE match-data IF EXISTS ;
+DROP TABLE match IF EXISTS ;
 
-CREATE TABLE match-data (
+CREATE TABLE match (
     id BIGINT IDENTITY NOT NULL PRIMARY KEY ,
     city varchar(20),
     match_date date,
